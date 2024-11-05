@@ -3758,6 +3758,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 5
   maxHealth: 5
+  healthText: {fileID: 1626194858}
+  healthTextAnim: {fileID: 1626194860}
 --- !u!1 &1279543856
 GameObject:
   m_ObjectHideFlags: 0
@@ -10739,8 +10741,9 @@ GameObject:
   - component: {fileID: 1626194857}
   - component: {fileID: 1626194859}
   - component: {fileID: 1626194858}
+  - component: {fileID: 1626194860}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: HP Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10862,6 +10865,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626194856}
   m_CullTransparentMesh: 1
+--- !u!95 &1626194860
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626194856}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 237a25a79a6775c4289c5cc987de0228, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1739389737
 GameObject:
   m_ObjectHideFlags: 0
