@@ -14,7 +14,11 @@ public class CameraFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cameraFollow();
+        if(player != null)
+        {
+            cameraFollow();
+        }
+        
     }
 
     void cameraFollow()
