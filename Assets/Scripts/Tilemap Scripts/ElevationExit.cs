@@ -8,7 +8,7 @@ public class ElevationExit : MonoBehaviour
     [SerializeField] private Collider2D[] boundaryColliders;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Player" || collision.gameObject.tag == "Enemy")
+        if(collision.gameObject.tag == "Player" /*|| collision.gameObject.tag == "Enemy"*/)
         {
             foreach(Collider2D highGround in highGroundColliders)
             {

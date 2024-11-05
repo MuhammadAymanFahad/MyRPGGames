@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    private Rigidbody2D enemyRigidbody;
-    [SerializeField] private Transform playerTransform;
     [SerializeField] private float speed;
+    private EnemyState enemyState;
+    private int facingDirection = 1;
+    private Rigidbody2D enemyRigidbody;
+    private Transform playerTransform;
+    private Animator enemyAnim;
+
     void Start()
     {
         enemyRigidbody = GetComponent<Rigidbody2D>();
+        enemyAnim = GetComponent<Animator>();
+        changeState(EnemyState.Idle);
     }
 
     // Update is called once per frame
@@ -17,8 +23,60 @@ public class EnemyMovement : MonoBehaviour
     {
         if(playerTransform != null)
         {
-            Vector2 direction = (playerTransform.position - transform.position).normalized;
-            enemyRigidbody.velocity = direction * speed;
+            if(enemyState == EnemyState.Chasing)
+            {
+                if (playerTransform.position.x > transform.position.x && facingDirection == -1 || playerTransform.position.x < transform.position.x && facingDirection == 1)
+                {
+                    facingDirection *= -1;
+                    transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+                }
+
+                Vector2 direction = (playerTransform.position - transform.position).normalized;
+                enemyRigidbody.velocity = direction * speed;
+            }
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            if(playerTransform == null)
+            {
+                playerTransform = collision.transform;
+            }
+            changeState(EnemyState.Chasing);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            enemyRigidbody.velocity = Vector2.zero;
+            changeState(EnemyState.Idle);
+        }
+    }
+
+    void changeState(EnemyState newState)
+    {
+        //exit the current animation
+        if (enemyState == EnemyState.Idle)
+            enemyAnim.SetBool("isIdle", false);
+        else if (enemyState == EnemyState.Chasing)
+            enemyAnim.SetBool("isChasing", false);
+        //update the current animation
+        enemyState = newState;
+        //update the new animation
+        if (enemyState == EnemyState.Idle)
+            enemyAnim.SetBool("isIdle", true);
+        else if (enemyState == EnemyState.Chasing)
+            enemyAnim.SetBool("isChasing", true);
+    }
+}
+
+public enum EnemyState
+{
+    Idle,
+    Chasing,
 }
