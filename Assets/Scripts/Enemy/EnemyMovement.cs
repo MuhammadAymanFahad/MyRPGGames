@@ -6,7 +6,7 @@ public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private float attackRange = 2;
-    private EnemyState enemyState;
+    [SerializeField] private EnemyState enemyState;
 
     private int facingDirection = 1;
     private Rigidbody2D enemyRigidbody;
@@ -23,7 +23,16 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(playerTransform != null)
+        if (enemyState == EnemyState.Chasing)
+        {
+            enemyChase();
+        }
+        else if (enemyState == EnemyState.Attacking)
+        {
+            enemyRigidbody.velocity = Vector2.zero;
+        }
+        /*
+        if (playerTransform != null)
         {
             if(enemyState == EnemyState.Chasing)
             {
@@ -31,9 +40,10 @@ public class EnemyMovement : MonoBehaviour
             }
             else if(enemyState == EnemyState.Attacking)
             {
-
+                enemyRigidbody.velocity = Vector2.zero;
             }
         }
+        */
     }
 
     void enemyChase()
@@ -51,6 +61,8 @@ public class EnemyMovement : MonoBehaviour
         Vector2 direction = (playerTransform.position - transform.position).normalized;
         enemyRigidbody.velocity = direction * speed;
     }
+
+    //change back to OnTriggerEnter2D if cannot be fixed
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")
@@ -85,11 +97,20 @@ public class EnemyMovement : MonoBehaviour
         enemyState = newState;
         //update the new animation
         if (enemyState == EnemyState.Idle)
+        {
             enemyAnim.SetBool("isIdle", true);
+            Debug.Log("Become idle");
+        } 
         else if (enemyState == EnemyState.Chasing)
+        {
             enemyAnim.SetBool("isChasing", true);
-        else if (enemyState == EnemyState.Chasing)
+            Debug.Log("Start Following the player");
+        } 
+        else if (enemyState == EnemyState.Attacking)
+        {
             enemyAnim.SetBool("isAttacking", true);
+            Debug.Log("Start Attacking state");
+        }  
     }
 }
 

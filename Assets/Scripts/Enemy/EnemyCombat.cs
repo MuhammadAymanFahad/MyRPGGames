@@ -5,6 +5,12 @@ using UnityEngine;
 public class EnemyCombat : MonoBehaviour
 {
     [SerializeField] private int enemyDamage = 1;
+
+    public void enemyAttack()
+    {
+        Debug.Log("Attacking the player");
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Player")
