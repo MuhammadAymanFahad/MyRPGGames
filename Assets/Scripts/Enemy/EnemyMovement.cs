@@ -6,9 +6,14 @@ public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private float attackRange = 2;
+    [SerializeField] private float attackCooldown = 2;
+    [SerializeField] private float playerDetectRange = 5;
+    [SerializeField] private Transform detectionPoint;
     [SerializeField] private EnemyState enemyState;
+    [SerializeField] private LayerMask playerLayer;
 
     private int facingDirection = 1;
+    private float attackCooldownTimer;
     private Rigidbody2D enemyRigidbody;
     private Transform playerTransform;
     private Animator enemyAnim;
@@ -23,6 +28,11 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        checkForPlayer();
+        if (attackCooldownTimer > 0)
+        {
+            attackCooldownTimer -= Time.deltaTime;
+        }
         if (enemyState == EnemyState.Chasing)
         {
             enemyChase();
@@ -48,12 +58,7 @@ public class EnemyMovement : MonoBehaviour
 
     void enemyChase()
     {
-        if(Vector2.Distance(transform.position, playerTransform.transform.position) <= attackRange)
-        {
-            changeState(EnemyState.Attacking);
-        }
-
-        else if (playerTransform.position.x > transform.position.x && facingDirection == -1 || playerTransform.position.x < transform.position.x && facingDirection == 1)
+        if (playerTransform.position.x > transform.position.x && facingDirection == -1 || playerTransform.position.x < transform.position.x && facingDirection == 1)
         {
             facingDirection *= -1;
             transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
@@ -62,22 +67,29 @@ public class EnemyMovement : MonoBehaviour
         enemyRigidbody.velocity = direction * speed;
     }
 
-    //change back to OnTriggerEnter2D if cannot be fixed
-    private void OnTriggerEnter2D(Collider2D collision)
+    //change back to OnTriggerEnter2D if cannot be fixed, early tutorial suggest to use OnTriggerStay2D
+    private void checkForPlayer()
     {
-        if(collision.gameObject.tag == "Player")
-        {
-            if(playerTransform == null)
-            {
-                playerTransform = collision.transform;
-            }
-            changeState(EnemyState.Chasing);
-        }
-    }
+        Collider2D[] hits = Physics2D.OverlapCircleAll(detectionPoint.position, playerDetectRange, playerLayer);
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if(collision.gameObject.tag == "Player")
+        if (hits.Length > 0)
+        {
+            playerTransform = hits[0].transform;
+
+            //if player in attack range AND cooldown is ready
+            if (Vector2.Distance(transform.position, playerTransform.position) <= attackRange && attackCooldownTimer <= 0)
+            {
+                attackCooldownTimer = attackCooldown;
+                changeState(EnemyState.Attacking);
+            }
+
+            else if (Vector2.Distance(transform.position, playerTransform.position) > attackRange)
+            {
+                changeState(EnemyState.Chasing);
+            }
+        }
+
+        else
         {
             enemyRigidbody.velocity = Vector2.zero;
             changeState(EnemyState.Idle);

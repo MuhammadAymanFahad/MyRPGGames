@@ -3572,7 +3572,7 @@ GameObject:
   - component: {fileID: 1174471233}
   - component: {fileID: 1174471239}
   - component: {fileID: 1174471238}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -11764,8 +11764,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8747156514776220129, guid: f2df9f9b08183ce42bc13b8142261a07, type: 3}
-      propertyPath: attackRange
-      value: 1.25
+      propertyPath: detectionPoint
+      value: 
+      objectReference: {fileID: 5611505308506004010}
+    - target: {fileID: 3560519291710210437, guid: f2df9f9b08183ce42bc13b8142261a07, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.62
       objectReference: {fileID: 0}
     - target: {fileID: 6266448713150354498, guid: f2df9f9b08183ce42bc13b8142261a07, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11816,6 +11820,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2df9f9b08183ce42bc13b8142261a07, type: 3}
+--- !u!4 &5611505308506004010 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3560519291710210437, guid: f2df9f9b08183ce42bc13b8142261a07, type: 3}
+  m_PrefabInstance: {fileID: 5611505308506004009}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

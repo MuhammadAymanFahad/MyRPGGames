@@ -9,20 +9,20 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Attackable
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Tilemap
+  - Obstacle
+  - Player
+  - Enemy
+  - Item
+  - Building
+  - Resource
+  - PopUpText
+  - NPC
+  - Damageable(Obstacles)
+  - PopUps
   - 
   - 
   - 
