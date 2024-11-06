@@ -7,7 +7,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float attackRange = 2;
     [SerializeField] private float attackCooldown = 2;
-    [SerializeField] private float playerDetectRange = 5;
+    [SerializeField] private float playerDetectRange = 6;
     [SerializeField] private Transform detectionPoint;
     [SerializeField] private EnemyState enemyState;
     [SerializeField] private LayerMask playerLayer;
@@ -83,7 +83,7 @@ public class EnemyMovement : MonoBehaviour
                 changeState(EnemyState.Attacking);
             }
 
-            else if (Vector2.Distance(transform.position, playerTransform.position) > attackRange)
+            else if (Vector2.Distance(transform.position, playerTransform.position) > attackRange && enemyState != EnemyState.Attacking)
             {
                 changeState(EnemyState.Chasing);
             }

@@ -231,6 +231,8 @@ MonoBehaviour:
   enemyDamage: 1
   attackPoint: {fileID: 3914090406764882218}
   weaponRange: 1.25
+  knockBackForce: 2
+  stunTime: 0.5
   playerLayer:
     serializedVersion: 2
     m_Bits: 256

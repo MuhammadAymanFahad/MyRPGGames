@@ -21,14 +21,4 @@ public class EnemyCombat : MonoBehaviour
             hits[0].GetComponent<PlayerMovement>().knockBack(transform, knockBackForce, stunTime);
         }
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        /*
-        if(collision.gameObject.tag == "Player")
-        {
-            collision.gameObject.GetComponent<PlayerHealth>().changeHealth(-enemyDamage);
-        }
-        */
-    }
 }
