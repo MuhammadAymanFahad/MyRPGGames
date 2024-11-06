@@ -7,6 +7,8 @@ public class EnemyCombat : MonoBehaviour
     [SerializeField] private int enemyDamage = 1;
     [SerializeField] private Transform attackPoint;
     [SerializeField] private float weaponRange;
+    [SerializeField] private float knockBackForce;
+    [SerializeField] private float stunTime;
     [SerializeField] private LayerMask playerLayer;
 
     public void enemyAttack()
@@ -16,14 +18,17 @@ public class EnemyCombat : MonoBehaviour
         if (hits.Length > 0)
         {
             hits[0].GetComponent<PlayerHealth>().changeHealth(-enemyDamage);
+            hits[0].GetComponent<PlayerMovement>().knockBack(transform, knockBackForce, stunTime);
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        /*
         if(collision.gameObject.tag == "Player")
         {
             collision.gameObject.GetComponent<PlayerHealth>().changeHealth(-enemyDamage);
         }
+        */
     }
 }

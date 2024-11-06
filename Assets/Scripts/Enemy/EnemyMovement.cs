@@ -124,6 +124,12 @@ public class EnemyMovement : MonoBehaviour
             Debug.Log("Start Attacking state");
         }  
     }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(detectionPoint.position, playerDetectRange);
+    }
 }
 
 public enum EnemyState

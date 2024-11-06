@@ -2197,7 +2197,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.70189524, y: -3.1440427, z: -10.022656}
+  m_LocalPosition: {x: 2.968104, y: -5.4040427, z: -10.022656}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3717,7 +3717,7 @@ Transform:
   m_GameObject: {fileID: 1174471232}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.36, y: -0.92, z: 0}
+  m_LocalPosition: {x: 8.03, y: -3.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10912,7 +10912,7 @@ Transform:
   m_GameObject: {fileID: 1739389737}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.70189524, y: -3.1440427, z: -10.022656}
+  m_LocalPosition: {x: 2.968104, y: -5.4040427, z: -10.022656}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11763,13 +11763,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8747156514776220129, guid: f2df9f9b08183ce42bc13b8142261a07, type: 3}
-      propertyPath: detectionPoint
-      value: 
-      objectReference: {fileID: 5611505308506004010}
-    - target: {fileID: 3560519291710210437, guid: f2df9f9b08183ce42bc13b8142261a07, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.62
+    - target: {fileID: 5370151701963668997, guid: f2df9f9b08183ce42bc13b8142261a07, type: 3}
+      propertyPath: stunTime
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5370151701963668997, guid: f2df9f9b08183ce42bc13b8142261a07, type: 3}
+      propertyPath: knockBackForce
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6266448713150354498, guid: f2df9f9b08183ce42bc13b8142261a07, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11820,11 +11820,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2df9f9b08183ce42bc13b8142261a07, type: 3}
---- !u!4 &5611505308506004010 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3560519291710210437, guid: f2df9f9b08183ce42bc13b8142261a07, type: 3}
-  m_PrefabInstance: {fileID: 5611505308506004009}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
