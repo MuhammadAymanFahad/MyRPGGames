@@ -7,10 +7,16 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private Rigidbody2D playerRigidBody;
     [SerializeField] private Animator playerAnim;
-    
-
+    [SerializeField] private PlayerCombat playerCombat;
     private bool isKnockedBack;
-  
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0) || Input.GetButtonDown("Slash"))
+        {
+            playerCombat.attack();
+        }
+    }
     // Update is called once per frame
     void FixedUpdate()
     {
