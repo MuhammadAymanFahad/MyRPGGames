@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class PlayerCombat : MonoBehaviour
 {
+    [SerializeField] private Transform attackPoint;
     [SerializeField] private Animator playerAnim;
+    [SerializeField] private LayerMask enemyLayer;
     [SerializeField] private float attackCooldown;
+    [SerializeField] private float weaponRange;
     private float timer;
+    public int damage;
 
     private void Update()
     {
@@ -20,6 +24,8 @@ public class PlayerCombat : MonoBehaviour
         if(timer <= 0)
         {
             playerAnim.SetBool("isAttacking", true);
+
+            Collider2D[] enemies = Physics2D.OverlapCircleAll(attackPoint.position, weaponRange, enemyLayer);
             timer = attackCooldown;
         }
     }
