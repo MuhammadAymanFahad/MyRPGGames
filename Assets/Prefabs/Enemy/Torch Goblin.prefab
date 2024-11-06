@@ -177,8 +177,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e044647e51e6c949aa9ff2a81624ecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.5
-  isEnemyChasing: 0
+  speed: 3
+  attackRange: 2
 --- !u!95 &184873754583185884
 Animator:
   serializedVersion: 5
@@ -232,6 +232,6 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 3.3140945, y: -0.03982973}
+  m_Offset: {x: 3.8078094, y: -0.03982973}
   serializedVersion: 2
-  m_Radius: 4.4364157
+  m_Radius: 4.820414

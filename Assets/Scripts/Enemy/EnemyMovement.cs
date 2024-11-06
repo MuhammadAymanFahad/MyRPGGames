@@ -5,7 +5,9 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] private float speed;
+    [SerializeField] private float attackRange = 2;
     private EnemyState enemyState;
+
     private int facingDirection = 1;
     private Rigidbody2D enemyRigidbody;
     private Transform playerTransform;
@@ -25,18 +27,30 @@ public class EnemyMovement : MonoBehaviour
         {
             if(enemyState == EnemyState.Chasing)
             {
-                if (playerTransform.position.x > transform.position.x && facingDirection == -1 || playerTransform.position.x < transform.position.x && facingDirection == 1)
-                {
-                    facingDirection *= -1;
-                    transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
-                }
+                enemyChase();
+            }
+            else if(enemyState == EnemyState.Attacking)
+            {
 
-                Vector2 direction = (playerTransform.position - transform.position).normalized;
-                enemyRigidbody.velocity = direction * speed;
             }
         }
     }
 
+    void enemyChase()
+    {
+        if(Vector2.Distance(transform.position, playerTransform.transform.position) <= attackRange)
+        {
+            changeState(EnemyState.Attacking);
+        }
+
+        else if (playerTransform.position.x > transform.position.x && facingDirection == -1 || playerTransform.position.x < transform.position.x && facingDirection == 1)
+        {
+            facingDirection *= -1;
+            transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+        }
+        Vector2 direction = (playerTransform.position - transform.position).normalized;
+        enemyRigidbody.velocity = direction * speed;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")
@@ -65,6 +79,8 @@ public class EnemyMovement : MonoBehaviour
             enemyAnim.SetBool("isIdle", false);
         else if (enemyState == EnemyState.Chasing)
             enemyAnim.SetBool("isChasing", false);
+        else if (enemyState == EnemyState.Attacking)
+            enemyAnim.SetBool("isAttacking", false);
         //update the current animation
         enemyState = newState;
         //update the new animation
@@ -72,6 +88,8 @@ public class EnemyMovement : MonoBehaviour
             enemyAnim.SetBool("isIdle", true);
         else if (enemyState == EnemyState.Chasing)
             enemyAnim.SetBool("isChasing", true);
+        else if (enemyState == EnemyState.Chasing)
+            enemyAnim.SetBool("isAttacking", true);
     }
 }
 
@@ -79,4 +97,5 @@ public enum EnemyState
 {
     Idle,
     Chasing,
+    Attacking,
 }
