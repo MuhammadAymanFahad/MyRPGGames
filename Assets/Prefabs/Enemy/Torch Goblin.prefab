@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 5370151701963668997}
   - component: {fileID: -8747156514776220129}
   - component: {fileID: -1377347215922859823}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Torch Goblin
   m_TagString: Enemy
   m_Icon: {fileID: 0}

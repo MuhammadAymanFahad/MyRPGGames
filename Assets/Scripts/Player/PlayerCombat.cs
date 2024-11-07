@@ -26,6 +26,12 @@ public class PlayerCombat : MonoBehaviour
             playerAnim.SetBool("isAttacking", true);
 
             Collider2D[] enemies = Physics2D.OverlapCircleAll(attackPoint.position, weaponRange, enemyLayer);
+
+            if (enemies.Length > 0)
+            {
+                enemies[0].GetComponent<EnemyHealth>().changeHealth(-damage);
+            }
+
             timer = attackCooldown;
         }
     }

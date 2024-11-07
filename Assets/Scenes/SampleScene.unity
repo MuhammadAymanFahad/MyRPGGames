@@ -3557,6 +3557,37 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1110889044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1110889045}
+  m_Layer: 8
+  m_Name: Attack Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1110889045
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110889044}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.51, y: -0.08, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1174471237}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1174471232
 GameObject:
   m_ObjectHideFlags: 0
@@ -3722,7 +3753,8 @@ Transform:
   m_LocalPosition: {x: 9.12, y: -4.94, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1110889045}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1174471238
@@ -3774,14 +3806,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae0f770286a5f9f438226bc5512eb777, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackPoint: {fileID: 0}
+  attackPoint: {fileID: 1110889045}
   playerAnim: {fileID: 1174471238}
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   attackCooldown: 1.5
-  weaponRange: 0
-  damage: 0
+  weaponRange: 2
+  damage: 2
 --- !u!1 &1279543856
 GameObject:
   m_ObjectHideFlags: 0
