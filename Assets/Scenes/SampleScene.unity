@@ -3813,6 +3813,7 @@ MonoBehaviour:
     m_Bits: 512
   attackCooldown: 1.5
   weaponRange: 0.6
+  knockbackForce: 10
   damage: 2
 --- !u!1 &1279543856
 GameObject:
@@ -11817,18 +11818,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3914090406764882218, guid: f2df9f9b08183ce42bc13b8142261a07, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.71
-      objectReference: {fileID: 0}
-    - target: {fileID: 3914090406764882218, guid: f2df9f9b08183ce42bc13b8142261a07, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 5370151701963668997, guid: f2df9f9b08183ce42bc13b8142261a07, type: 3}
-      propertyPath: weaponRange
-      value: 0.4
-      objectReference: {fileID: 0}
     - target: {fileID: 6266448713150354498, guid: f2df9f9b08183ce42bc13b8142261a07, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.02

@@ -9,6 +9,7 @@ public class PlayerCombat : MonoBehaviour
     [SerializeField] private LayerMask enemyLayer;
     [SerializeField] private float attackCooldown;
     [SerializeField] private float weaponRange;
+    [SerializeField] private float knockbackForce;
     private float timer;
     public int damage;
 
@@ -38,6 +39,7 @@ public class PlayerCombat : MonoBehaviour
         if (enemies.Length > 0)
         {
             enemies[0].GetComponent<EnemyHealth>().changeHealth(-damage);
+            enemies[0].GetComponent<EnemyKnockback>().Knockback(transform, knockbackForce);
         }
     }
 

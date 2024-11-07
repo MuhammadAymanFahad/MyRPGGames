@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 7419711020544050057}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.786, y: -0.53, z: 0}
+  m_LocalPosition: {x: 0.71, y: -0.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -78,6 +78,8 @@ GameObject:
   - component: {fileID: 5370151701963668997}
   - component: {fileID: -8747156514776220129}
   - component: {fileID: -1377347215922859823}
+  - component: {fileID: 428371035482619472}
+  - component: {fileID: 8062634368649943892}
   m_Layer: 9
   m_Name: Torch Goblin
   m_TagString: Enemy
@@ -251,7 +253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyDamage: 1
   attackPoint: {fileID: 3914090406764882218}
-  weaponRange: 1
+  weaponRange: 0.5
   knockBackForce: 10
   stunTime: 0.1
   playerLayer:
@@ -292,3 +294,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHeath: 4
   maxHealth: 4
+--- !u!114 &428371035482619472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8957306393951028756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d20098e45b233244a6845a0c0593d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyRigidBody: {fileID: 0}
+--- !u!114 &8062634368649943892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8957306393951028756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d20098e45b233244a6845a0c0593d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyRigidBody: {fileID: 0}
