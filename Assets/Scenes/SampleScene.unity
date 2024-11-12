@@ -123,6 +123,58 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &159280243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 159280245}
+  - component: {fileID: 159280244}
+  m_Layer: 0
+  m_Name: Stats Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &159280244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159280243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41c15e3853ebd648ba88bc40586c2a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 2
+  weaponRange: 0.6
+  knockbackForce: 10
+  knockbackTime: 0.15
+  stunTime: 0.15
+  speed: 5
+  maxHealth: 5
+  currentHealth: 5
+--- !u!4 &159280245
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159280243}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.7321012, y: -2.3832824, z: -0.012997532}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &212644066
 GameObject:
   m_ObjectHideFlags: 0
@@ -3623,7 +3675,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a443dbe329f9554080c18f590e061ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
   playerRigidBody: {fileID: 1174471234}
   playerAnim: {fileID: 1174471238}
   playerCombat: {fileID: 1174471240}
@@ -3790,8 +3841,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 571abe0902173f146be95292e3689e27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 8
-  maxHealth: 8
   healthText: {fileID: 1626194858}
   healthTextAnim: {fileID: 1626194860}
 --- !u!114 &1174471240
@@ -3812,11 +3861,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   attackCooldown: 1.5
-  weaponRange: 0.6
-  knockbackForce: 10
-  knockbackTime: 0.15
-  stunTime: 0.15
-  damage: 2
 --- !u!1 &1279543856
 GameObject:
   m_ObjectHideFlags: 0
@@ -11820,14 +11864,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -1377347215922859823, guid: f2df9f9b08183ce42bc13b8142261a07, type: 3}
-      propertyPath: maxHealth
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: -1377347215922859823, guid: f2df9f9b08183ce42bc13b8142261a07, type: 3}
-      propertyPath: currentHeath
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 6266448713150354498, guid: f2df9f9b08183ce42bc13b8142261a07, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.42
@@ -11888,3 +11924,4 @@ SceneRoots:
   - {fileID: 5611505308506004009}
   - {fileID: 1279543860}
   - {fileID: 849979345}
+  - {fileID: 159280245}

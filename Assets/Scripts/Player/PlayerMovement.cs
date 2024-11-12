@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float speed = 5;
     [SerializeField] private Rigidbody2D playerRigidBody;
     [SerializeField] private Animator playerAnim;
     [SerializeField] private PlayerCombat playerCombat;
@@ -34,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
         playerAnim.SetFloat("horizontal", Mathf.Abs(horizontal));
         playerAnim.SetFloat("vertical", Mathf.Abs(vertical));
 
-        playerRigidBody.velocity = new Vector2(horizontal, vertical) * speed; 
+        playerRigidBody.velocity = new Vector2(horizontal, vertical) * PlayerStatsManager.instance.speed; 
     }
 
     void manageDirection(float horizontal, float vertical)

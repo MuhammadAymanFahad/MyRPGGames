@@ -8,12 +8,8 @@ public class PlayerCombat : MonoBehaviour
     [SerializeField] private Animator playerAnim;
     [SerializeField] private LayerMask enemyLayer;
     [SerializeField] private float attackCooldown = 1.5f;
-    [SerializeField] private float weaponRange = 0.6f;
-    [SerializeField] private float knockbackForce = 10.0f;
-    [SerializeField] private float knockbackTime = 0.15f;
-    [SerializeField] private float stunTime = 1f;
     private float timer;
-    public int damage = 2;
+    
 
     private void Update()
     {
@@ -33,12 +29,12 @@ public class PlayerCombat : MonoBehaviour
 
     public void dealDamage()
     {
-        Collider2D[] enemies = Physics2D.OverlapCircleAll(attackPoint.position, weaponRange, enemyLayer);
+        Collider2D[] enemies = Physics2D.OverlapCircleAll(attackPoint.position, PlayerStatsManager.instance.weaponRange, enemyLayer);
 
         if (enemies.Length > 0)
         {
-            enemies[0].GetComponent<EnemyHealth>().changeHealth(-damage);
-            enemies[0].GetComponent<EnemyKnockback>().Knockback(transform, knockbackForce, knockbackTime, stunTime);
+            enemies[0].GetComponent<EnemyHealth>().changeHealth(-PlayerStatsManager.instance.damage);
+            enemies[0].GetComponent<EnemyKnockback>().Knockback(transform, PlayerStatsManager.instance.knockbackForce, PlayerStatsManager.instance.knockbackTime, PlayerStatsManager.instance.stunTime);
         }
     }
 
@@ -50,6 +46,6 @@ public class PlayerCombat : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(attackPoint.position, weaponRange);
+        Gizmos.DrawWireSphere(attackPoint.position,PlayerStatsManager.instance.weaponRange);
     }
 }

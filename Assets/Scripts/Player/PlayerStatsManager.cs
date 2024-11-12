@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class PlayerStatsManager : MonoBehaviour
 {
+    public static PlayerStatsManager instance;
+
     [Header("Combat Stats")]
-    public int weaponRange;
-    public int knockbackForce;
-    public int knockbackTime;
-    public int stunTime;
+    public int damage;
+    public float weaponRange;
+    public float knockbackForce;
+    public float knockbackTime;
+    public float stunTime;
 
     [Header("Movement Stats")]
     public int speed;
@@ -16,4 +19,16 @@ public class PlayerStatsManager : MonoBehaviour
     [Header("Heath Stats")]
     public int maxHealth;
     public int currentHealth;
+
+    private void Awake()
+    {
+        if(instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 }
