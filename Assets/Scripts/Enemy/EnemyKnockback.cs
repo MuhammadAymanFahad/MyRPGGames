@@ -12,19 +12,20 @@ public class EnemyKnockback : MonoBehaviour
         enemyRigidBody = GetComponent<Rigidbody2D>();
         enemyMovement = GetComponent<EnemyMovement>();
     }
-    public void Knockback(Transform playerTransform, float knockbackForce, float stunTime)
+    public void Knockback(Transform playerTransform, float knockbackForce, float knockbackTime, float stunTime)
     {
         enemyMovement.changeState(EnemyState.Knockedback);
-        StartCoroutine(stunTimer(stunTime));
+        StartCoroutine(stunTimer(knockbackTime, stunTime));
         Vector2 direction = (transform.position - playerTransform.position).normalized;
         enemyRigidBody.velocity = direction * knockbackForce;
         Debug.Log("Knockback Applied.");
     }
 
-    IEnumerator stunTimer(float stunTime) 
+    IEnumerator stunTimer(float knockbackTime, float stunTime) 
     {
-        yield return new WaitForSeconds(stunTime);
+        yield return new WaitForSeconds(knockbackTime);
         enemyRigidBody.velocity = Vector2.zero;
+        yield return new WaitForSeconds(stunTime);
         enemyMovement.changeState(EnemyState.Idle);
     }
 }
