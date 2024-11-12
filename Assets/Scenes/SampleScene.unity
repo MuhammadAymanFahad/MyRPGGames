@@ -3790,8 +3790,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 571abe0902173f146be95292e3689e27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 100
-  maxHealth: 100
+  currentHealth: 8
+  maxHealth: 8
   healthText: {fileID: 1626194858}
   healthTextAnim: {fileID: 1626194860}
 --- !u!114 &1174471240
@@ -11820,6 +11820,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1377347215922859823, guid: f2df9f9b08183ce42bc13b8142261a07, type: 3}
+      propertyPath: maxHealth
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -1377347215922859823, guid: f2df9f9b08183ce42bc13b8142261a07, type: 3}
+      propertyPath: currentHeath
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6266448713150354498, guid: f2df9f9b08183ce42bc13b8142261a07, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.42

@@ -7,13 +7,13 @@ public class PlayerCombat : MonoBehaviour
     [SerializeField] private Transform attackPoint;
     [SerializeField] private Animator playerAnim;
     [SerializeField] private LayerMask enemyLayer;
-    [SerializeField] private float attackCooldown;
-    [SerializeField] private float weaponRange;
-    [SerializeField] private float knockbackForce;
-    [SerializeField] private float knockbackTime = 0.25f;
-    [SerializeField] private float stunTime = 1;
+    [SerializeField] private float attackCooldown = 1.5f;
+    [SerializeField] private float weaponRange = 0.6f;
+    [SerializeField] private float knockbackForce = 10.0f;
+    [SerializeField] private float knockbackTime = 0.15f;
+    [SerializeField] private float stunTime = 1f;
     private float timer;
-    public int damage;
+    public int damage = 2;
 
     private void Update()
     {

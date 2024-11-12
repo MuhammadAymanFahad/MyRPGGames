@@ -292,8 +292,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e65dd1b0e64345f4d979d6bd6b170d16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHeath: 10
-  maxHealth: 10
+  currentHeath: 4
+  maxHealth: 4
 --- !u!114 &428371035482619472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,6 +307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyRigidBody: {fileID: 0}
+  enemyMovement: {fileID: 0}
 --- !u!114 &8062634368649943892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,3 +321,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyRigidBody: {fileID: 0}
+  enemyMovement: {fileID: 0}
