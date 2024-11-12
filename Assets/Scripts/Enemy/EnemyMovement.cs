@@ -28,32 +28,23 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        checkForPlayer();
-        if (attackCooldownTimer > 0)
+        if(enemyState != EnemyState.Knockedback)
         {
-            attackCooldownTimer -= Time.deltaTime;
-        }
-        if (enemyState == EnemyState.Chasing)
-        {
-            enemyChase();
-        }
-        else if (enemyState == EnemyState.Attacking)
-        {
-            enemyRigidbody.velocity = Vector2.zero;
-        }
-        /*
-        if (playerTransform != null)
-        {
-            if(enemyState == EnemyState.Chasing)
+            checkForPlayer();
+            if (attackCooldownTimer > 0)
+            {
+                attackCooldownTimer -= Time.deltaTime;
+            }
+            if (enemyState == EnemyState.Chasing)
             {
                 enemyChase();
             }
-            else if(enemyState == EnemyState.Attacking)
+            else if (enemyState == EnemyState.Attacking)
             {
                 enemyRigidbody.velocity = Vector2.zero;
             }
         }
-        */
+
     }
 
     void enemyChase()
@@ -67,7 +58,6 @@ public class EnemyMovement : MonoBehaviour
         enemyRigidbody.velocity = direction * speed;
     }
 
-    //change back to OnTriggerEnter2D if cannot be fixed, early tutorial suggest to use OnTriggerStay2D
     private void checkForPlayer()
     {
         Collider2D[] hits = Physics2D.OverlapCircleAll(detectionPoint.position, playerDetectRange, playerLayer);
@@ -96,7 +86,7 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
-    void changeState(EnemyState newState)
+    public void changeState(EnemyState newState)
     {
         //exit the current animation
         if (enemyState == EnemyState.Idle)
@@ -105,24 +95,19 @@ public class EnemyMovement : MonoBehaviour
             enemyAnim.SetBool("isChasing", false);
         else if (enemyState == EnemyState.Attacking)
             enemyAnim.SetBool("isAttacking", false);
+        else if (enemyState == EnemyState.Knockedback)
+            enemyAnim.SetBool("isKnockedback", false);
         //update the current animation
         enemyState = newState;
         //update the new animation
         if (enemyState == EnemyState.Idle)
-        {
             enemyAnim.SetBool("isIdle", true);
-            Debug.Log("Become idle");
-        } 
         else if (enemyState == EnemyState.Chasing)
-        {
             enemyAnim.SetBool("isChasing", true);
-            Debug.Log("Start Following the player");
-        } 
         else if (enemyState == EnemyState.Attacking)
-        {
             enemyAnim.SetBool("isAttacking", true);
-            Debug.Log("Start Attacking state");
-        }  
+        else if (enemyState == EnemyState.Knockedback)
+            enemyAnim.SetBool("isKnockedback", true);
     }
 
     private void OnDrawGizmosSelected()
@@ -137,4 +122,5 @@ public enum EnemyState
     Idle,
     Chasing,
     Attacking,
+    Knockedback,
 }
