@@ -3815,7 +3815,7 @@ MonoBehaviour:
   weaponRange: 0.6
   knockbackForce: 10
   knockbackTime: 0.15
-  stunTime: 0.2
+  stunTime: 0.15
   damage: 2
 --- !u!1 &1279543856
 GameObject:

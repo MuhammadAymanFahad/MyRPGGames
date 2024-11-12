@@ -95,8 +95,8 @@ public class EnemyMovement : MonoBehaviour
             enemyAnim.SetBool("isChasing", false);
         else if (enemyState == EnemyState.Attacking)
             enemyAnim.SetBool("isAttacking", false);
-        else if (enemyState == EnemyState.Knockedback)
-            enemyAnim.SetBool("isKnockedback", false);
+        //else if (enemyState == EnemyState.Knockedback)
+            //enemyAnim.SetBool("isKnockedback", false);
         //update the current animation
         enemyState = newState;
         //update the new animation
@@ -106,8 +106,8 @@ public class EnemyMovement : MonoBehaviour
             enemyAnim.SetBool("isChasing", true);
         else if (enemyState == EnemyState.Attacking)
             enemyAnim.SetBool("isAttacking", true);
-        else if (enemyState == EnemyState.Knockedback)
-            enemyAnim.SetBool("isKnockedback", true);
+        //else if (enemyState == EnemyState.Knockedback)
+            //enemyAnim.SetBool("isKnockedback", true);
     }
 
     private void OnDrawGizmosSelected()
