@@ -21,12 +21,14 @@ public class PlayerStatsUI : MonoBehaviour
             if (statsOpen)
             {
                 Time.timeScale = 1;
+                updateAllStats();
                 statsCanvas.alpha = 0;
                 statsOpen = false;
             }
             else
             {
                 Time.timeScale = 0;
+                updateAllStats();
                 statsCanvas.alpha = 1;
                 statsOpen = true;
             }

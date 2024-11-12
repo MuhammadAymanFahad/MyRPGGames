@@ -8,6 +8,7 @@ public class PlayerCombat : MonoBehaviour
     [SerializeField] private Animator playerAnim;
     [SerializeField] private LayerMask enemyLayer;
     [SerializeField] private float attackCooldown = 1.5f;
+    [SerializeField] private PlayerStatsUI statsUI;
     private float timer;
     
 
