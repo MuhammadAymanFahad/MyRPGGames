@@ -14,5 +14,6 @@ public class EnemyKnockback : MonoBehaviour
     {
         Vector2 direction = (transform.position - playerTransform.position).normalized;
         enemyRigidBody.velocity = direction * knockbackForce;
+        Debug.Log("Knockback Applied.");
     }
 }

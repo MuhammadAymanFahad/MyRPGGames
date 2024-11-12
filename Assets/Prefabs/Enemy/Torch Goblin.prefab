@@ -254,7 +254,7 @@ MonoBehaviour:
   enemyDamage: 1
   attackPoint: {fileID: 3914090406764882218}
   weaponRange: 0.5
-  knockBackForce: 10
+  knockBackForce: 8
   stunTime: 0.1
   playerLayer:
     serializedVersion: 2
@@ -292,8 +292,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e65dd1b0e64345f4d979d6bd6b170d16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHeath: 4
-  maxHealth: 4
+  currentHeath: 10
+  maxHealth: 10
 --- !u!114 &428371035482619472
 MonoBehaviour:
   m_ObjectHideFlags: 0
