@@ -12,7 +12,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private EnemyState enemyState;
     [SerializeField] private LayerMask playerLayer;
 
-    private int facingDirection = 1;
+    private int facingDirection;
     private float attackCooldownTimer;
     private Rigidbody2D enemyRigidbody;
     private Transform playerTransform;
@@ -20,6 +20,7 @@ public class EnemyMovement : MonoBehaviour
 
     void Start()
     {
+        facingDirection = Mathf.RoundToInt(GetComponent<Transform>().localScale.x);
         enemyRigidbody = GetComponent<Rigidbody2D>();
         enemyAnim = GetComponent<Animator>();
         changeState(EnemyState.Idle);

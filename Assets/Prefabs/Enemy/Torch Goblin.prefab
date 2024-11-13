@@ -79,7 +79,6 @@ GameObject:
   - component: {fileID: -8747156514776220129}
   - component: {fileID: -1377347215922859823}
   - component: {fileID: 428371035482619472}
-  - component: {fileID: 8062634368649943892}
   m_Layer: 9
   m_Name: Torch Goblin
   m_TagString: Enemy
@@ -296,20 +295,6 @@ MonoBehaviour:
   maxHealth: 4
   expReward: 3
 --- !u!114 &428371035482619472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8957306393951028756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d20098e45b233244a6845a0c0593d6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyRigidBody: {fileID: 0}
-  enemyMovement: {fileID: 0}
---- !u!114 &8062634368649943892
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
