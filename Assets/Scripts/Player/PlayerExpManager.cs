@@ -18,6 +18,16 @@ public class PlayerExpManager : MonoBehaviour
         updateLevelSlider();
     }
 
+    private void OnEnable()
+    {
+        EnemyHealth.onMonsterDefeated += gainExperience;
+    }
+
+    private void OnDisable()
+    {
+        
+    }
+
     private void updateLevelSlider()
     {
         expSlider.maxValue = expToLevel;

@@ -6,8 +6,9 @@ public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] private float currentHeath;
     [SerializeField] private float maxHealth;
-    [SerializeField] private PlayerExpManager expManager;
-    public int expPoint;
+    public delegate void MonsterDefeated(int exp);
+    public static event MonsterDefeated onMonsterDefeated;
+    public int expReward;
  
     private void Start()
     {
@@ -23,8 +24,8 @@ public class EnemyHealth : MonoBehaviour
         }
         else if (currentHeath <= 0)
         {
+            onMonsterDefeated(expReward);
             Destroy(this.gameObject);
-            expManager.gainExperience(expPoint);
         }
     }
 }
