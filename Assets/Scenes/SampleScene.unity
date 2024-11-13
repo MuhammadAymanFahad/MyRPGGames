@@ -451,6 +451,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skills Button (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8248643448368033459, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5c430e4e3516d9645970c38f22e96166, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1127,6 +1131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire Magic
       objectReference: {fileID: 0}
+    - target: {fileID: 8248643448368033459, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4a9c9fff975645d46b3e48976842fb8b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2628,7 +2636,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 436586061}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
@@ -2724,6 +2732,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skills Button (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8248643448368033459, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 34b898002c4ec0d4cb04aef321dca372, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4550,6 +4562,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skills Button (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8248643448368033459, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4a9c9fff975645d46b3e48976842fb8b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4652,6 +4668,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skills Button (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8248643448368033459, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fd22973d8be1aa54590d8178827e5746, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4856,6 +4876,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skills Button (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8248643448368033459, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5c430e4e3516d9645970c38f22e96166, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5078,6 +5102,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skills Button (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8248643448368033459, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5c430e4e3516d9645970c38f22e96166, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5324,6 +5352,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skills Button (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8248643448368033459, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fd22973d8be1aa54590d8178827e5746, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5501,6 +5533,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skills Button (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8248643448368033459, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b5d36be5de45fd642b9729fdfa92d395, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5675,6 +5711,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skills Button (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8248643448368033459, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fd22973d8be1aa54590d8178827e5746, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5948,6 +5988,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skills Button (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8248643448368033459, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4a9c9fff975645d46b3e48976842fb8b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6228,6 +6272,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skills Button (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8248643448368033459, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b5d36be5de45fd642b9729fdfa92d395, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6764,6 +6812,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skills Button (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8248643448368033459, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fd22973d8be1aa54590d8178827e5746, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6968,6 +7020,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skills Button (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8248643448368033459, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 34b898002c4ec0d4cb04aef321dca372, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7070,6 +7126,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skills Button (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8248643448368033459, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 34b898002c4ec0d4cb04aef321dca372, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7431,6 +7491,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skills Button (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8248643448368033459, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4a9c9fff975645d46b3e48976842fb8b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15447,6 +15511,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skills Button (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8248643448368033459, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5c430e4e3516d9645970c38f22e96166, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15549,6 +15617,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skills Button (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8248643448368033459, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b5d36be5de45fd642b9729fdfa92d395, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16283,6 +16355,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skills Button (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8248643448368033459, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b5d36be5de45fd642b9729fdfa92d395, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16529,6 +16605,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skills Button (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8248643448368033459, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 34b898002c4ec0d4cb04aef321dca372, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17031,6 +17111,10 @@ PrefabInstance:
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Name
       value: Skills Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 6521762829112216834, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
