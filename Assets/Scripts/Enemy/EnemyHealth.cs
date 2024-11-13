@@ -6,7 +6,9 @@ public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] private float currentHeath;
     [SerializeField] private float maxHealth;
-
+    [SerializeField] private PlayerExpManager expManager;
+    public int expPoint;
+ 
     private void Start()
     {
         currentHeath = maxHealth;
@@ -22,6 +24,7 @@ public class EnemyHealth : MonoBehaviour
         else if (currentHeath <= 0)
         {
             Destroy(this.gameObject);
+            expManager.gainExperience(expPoint);
         }
     }
 }
