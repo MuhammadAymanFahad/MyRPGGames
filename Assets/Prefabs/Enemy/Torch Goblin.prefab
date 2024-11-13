@@ -252,7 +252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyDamage: 1
   attackPoint: {fileID: 3914090406764882218}
-  weaponRange: 0.5
+  weaponRange: 1
   knockBackForce: 8
   stunTime: 0.1
   playerLayer:
