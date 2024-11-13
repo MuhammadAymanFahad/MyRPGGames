@@ -294,6 +294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHeath: 4
   maxHealth: 4
+  expReward: 3
 --- !u!114 &428371035482619472
 MonoBehaviour:
   m_ObjectHideFlags: 0

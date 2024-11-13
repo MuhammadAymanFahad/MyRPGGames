@@ -13138,14 +13138,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -1377347215922859823, guid: f2df9f9b08183ce42bc13b8142261a07, type: 3}
-      propertyPath: expPoint
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: -1377347215922859823, guid: f2df9f9b08183ce42bc13b8142261a07, type: 3}
-      propertyPath: expManager
-      value: 
-      objectReference: {fileID: 298323937}
     - target: {fileID: 6266448713150354498, guid: f2df9f9b08183ce42bc13b8142261a07, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.42

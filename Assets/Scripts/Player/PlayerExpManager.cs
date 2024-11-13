@@ -25,7 +25,7 @@ public class PlayerExpManager : MonoBehaviour
 
     private void OnDisable()
     {
-        
+        EnemyHealth.onMonsterDefeated -= gainExperience;
     }
 
     private void updateLevelSlider()
