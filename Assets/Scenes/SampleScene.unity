@@ -2636,7 +2636,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 436586061}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
@@ -5346,6 +5346,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 656145283488338103, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: isUnlocked
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
@@ -17110,6 +17114,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 656145283488338103, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: skillSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 617dffddb4666db4381e235cd900bee4, type: 2}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: isUnlocked
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
