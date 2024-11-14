@@ -13,10 +13,18 @@ public class SkillTreeManager : MonoBehaviour
     {
         foreach (SkillSlot slot in skillSlots)
         {
-            slot.skillButton.onClick.AddListener(slot.tryUpgradeSkill);
+            slot.skillButton.onClick.AddListener(() => checkAvailablePoints(slot));
         }
         Debug.Log("Available points :" + availablePoints);
         updateSkillPoints(0);
+    }
+
+    private void checkAvailablePoints(SkillSlot slot)
+    {
+        if (availablePoints > 0)
+        {
+            slot.tryUpgradeSkill();
+        }
     }
 
     private void OnEnable()
