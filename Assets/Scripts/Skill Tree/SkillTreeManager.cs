@@ -49,7 +49,10 @@ public class SkillTreeManager : MonoBehaviour
     {
         foreach(SkillSlot slot in skillSlots)
         {
-            slot.unlock();
+            if(!slot.isUnlocked && slot.canUnlockSkill())
+            {
+                slot.unlock();
+            }
         }
     }
 }

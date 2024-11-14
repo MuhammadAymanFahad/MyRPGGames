@@ -7,6 +7,7 @@ using TMPro;
 
 public class SkillSlot : MonoBehaviour
 {
+    public List<SkillSlot> prequisiteSkillSlots;
     public SkillSO skillSO;
 
     public int currentLevel;
@@ -39,6 +40,18 @@ public class SkillSlot : MonoBehaviour
             }
             updateUI();
         }
+    }
+
+    public bool canUnlockSkill()
+    {
+        foreach (SkillSlot slot in prequisiteSkillSlots)
+        {
+            if (!slot.isUnlocked || slot.currentLevel < slot.skillSO.maxLevel)
+            {
+                return false;
+            }
+        }
+        return true;
     }
 
     public void unlock()
