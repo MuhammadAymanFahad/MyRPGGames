@@ -2715,7 +2715,7 @@ MonoBehaviour:
   - {fileID: 1032200146}
   - {fileID: 1416864935}
   pointsText: {fileID: 1551296137}
-  availablePoints: 25
+  availablePoints: 20
 --- !u!1001 &440695538
 PrefabInstance:
   m_ObjectHideFlags: 0
