@@ -1139,6 +1139,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: skillSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 5c8d0d8339c90c24ab9a4893eff6edfe, type: 2}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: isUnlocked
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Name
       value: Fire Magic
@@ -2784,6 +2792,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: skillSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e4fd16d0bf228143bcbcf0b1de3a91d, type: 2}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 1429907909}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Name
       value: Skills Button (5)
@@ -4629,6 +4649,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: skillSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 5c8d0d8339c90c24ab9a4893eff6edfe, type: 2}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 772854891}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Name
       value: Skills Button (3)
@@ -4754,6 +4786,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: skillSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 7a0ff290d62aa6146be8a6ef8734ad63, type: 2}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 1773412334}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[1]
+      value: 
+      objectReference: {fileID: 930253785}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[2]
+      value: 
+      objectReference: {fileID: 1264731505}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Name
       value: Skills Button (10)
@@ -5518,8 +5570,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: skillSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 7a0ff290d62aa6146be8a6ef8734ad63, type: 2}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: isUnlocked
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Name
@@ -5717,6 +5773,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: skillSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 94ccd563602ca434ba6fa903edac27e5, type: 2}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 1821432446}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[1]
+      value: 
+      objectReference: {fileID: 2011334962}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Name
       value: Skills Button (7)
@@ -5903,6 +5979,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: skillSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 7a0ff290d62aa6146be8a6ef8734ad63, type: 2}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 1773412334}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Name
       value: Skills Button (4)
@@ -6194,6 +6282,26 @@ PrefabInstance:
     - target: {fileID: 656145283488338103, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: skillSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 5c8d0d8339c90c24ab9a4893eff6edfe, type: 2}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 772854891}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[1]
+      value: 
+      objectReference: {fileID: 759273658}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[2]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Name
@@ -6504,6 +6612,14 @@ PrefabInstance:
     - target: {fileID: 656145283488338103, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: skillSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 94ccd563602ca434ba6fa903edac27e5, type: 2}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Name
@@ -7112,6 +7228,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: skillSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 7a0ff290d62aa6146be8a6ef8734ad63, type: 2}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 1773412334}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[1]
+      value: 
+      objectReference: {fileID: 930253785}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Name
       value: Skills Button (7)
@@ -7335,6 +7467,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: skillSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e4fd16d0bf228143bcbcf0b1de3a91d, type: 2}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Name
       value: Skills Button (11)
@@ -7467,9 +7607,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: skillSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e4fd16d0bf228143bcbcf0b1de3a91d, type: 2}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: isUnlocked
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Name
-      value: Skills Button (2)
+      value: Thunder Magic
       objectReference: {fileID: 0}
     - target: {fileID: 8248643448368033459, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Sprite
@@ -7858,6 +8006,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: skillSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 5c8d0d8339c90c24ab9a4893eff6edfe, type: 2}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 772854891}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[1]
+      value: 
+      objectReference: {fileID: 759273658}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[2]
+      value: 
+      objectReference: {fileID: 951584630}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Name
       value: Skills Button (9)
@@ -16073,9 +16241,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: skillSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 94ccd563602ca434ba6fa903edac27e5, type: 2}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: isUnlocked
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Name
-      value: Skills Button (1)
+      value: Ice Magic
       objectReference: {fileID: 0}
     - target: {fileID: 8248643448368033459, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Sprite
@@ -16877,6 +17053,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: skillSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 94ccd563602ca434ba6fa903edac27e5, type: 2}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 1821432446}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Name
       value: Skills Button (4)
@@ -17142,6 +17330,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: skillSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e4fd16d0bf228143bcbcf0b1de3a91d, type: 2}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 1429907909}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[1]
+      value: 
+      objectReference: {fileID: 440695540}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Name
       value: Skills Button (8)
@@ -17674,7 +17878,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 617dffddb4666db4381e235cd900bee4, type: 2}
     - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: isUnlocked
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Name

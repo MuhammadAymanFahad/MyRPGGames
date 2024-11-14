@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Ice Boost
   maxLevel: 5
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: b5d36be5de45fd642b9729fdfa92d395, type: 3}

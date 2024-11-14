@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Fire Boost
   maxLevel: 5
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: 4a9c9fff975645d46b3e48976842fb8b, type: 3}

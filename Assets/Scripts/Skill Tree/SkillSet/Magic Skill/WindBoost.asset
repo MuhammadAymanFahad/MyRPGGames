@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Wind Boost
   maxLevel: 5
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: e888f79ce31a35249a309864ede2077a, type: 3}
