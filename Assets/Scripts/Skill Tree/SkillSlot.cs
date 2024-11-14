@@ -46,6 +46,13 @@ public class SkillSlot : MonoBehaviour
     {
         foreach (SkillSlot slot in prequisiteSkillSlots)
         {
+            /*
+            if (slot == null)
+            {
+                Debug.LogError("Prerequisite Skill is null!");
+                return false;
+            }
+            */
             if (!slot.isUnlocked || slot.currentLevel < slot.skillSO.maxLevel)
             {
                 return false;

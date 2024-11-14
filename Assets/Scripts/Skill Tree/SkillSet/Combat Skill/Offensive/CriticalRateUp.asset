@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edaf7f5b33f39fb4d94e1bc05bf36a3e, type: 3}
   m_Name: CriticalRateUp
   m_EditorClassIdentifier: 
-  skillName: 
-  maxLevel: 0
-  skillIcon: {fileID: 0}
+  skillName: Critical Rate Up
+  maxLevel: 5
+  skillIcon: {fileID: 21300000, guid: fd22973d8be1aa54590d8178827e5746, type: 3}

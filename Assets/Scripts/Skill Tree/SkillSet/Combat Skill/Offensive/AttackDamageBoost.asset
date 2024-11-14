@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: Attack Damage Boost
   maxLevel: 5
-  skillIcon: {fileID: 21300000, guid: fd22973d8be1aa54590d8178827e5746, type: 3}
+  skillIcon: {fileID: 21300000, guid: 5c430e4e3516d9645970c38f22e96166, type: 3}

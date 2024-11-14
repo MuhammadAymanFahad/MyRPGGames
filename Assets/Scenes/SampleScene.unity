@@ -455,6 +455,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: skillSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 7a0ff290d62aa6146be8a6ef8734ad63, type: 2}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 1614633166}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[1]
+      value: 
+      objectReference: {fileID: 1779351579}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Name
       value: Skills Button (8)
@@ -2699,7 +2715,7 @@ MonoBehaviour:
   - {fileID: 1032200146}
   - {fileID: 1416864935}
   pointsText: {fileID: 1551296137}
-  availablePoints: 6
+  availablePoints: 25
 --- !u!1001 &440695538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4789,7 +4805,7 @@ PrefabInstance:
     - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 7a0ff290d62aa6146be8a6ef8734ad63, type: 2}
+      objectReference: {fileID: 11400000, guid: f0f48c707dcae66478c111bf51bc9263, type: 2}
     - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: prequisiteSkillSlots.Array.size
       value: 3
@@ -5077,6 +5093,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: skillSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 7a0ff290d62aa6146be8a6ef8734ad63, type: 2}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 1614633166}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[1]
+      value: 
+      objectReference: {fileID: 1779351579}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[2]
+      value: 
+      objectReference: {fileID: 1428031109}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Name
       value: Skills Button (11)
@@ -5311,14 +5347,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: skillSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 7a0ff290d62aa6146be8a6ef8734ad63, type: 2}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: isUnlocked
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Name
       value: Skills Button (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 8248643448368033459, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 5c430e4e3516d9645970c38f22e96166, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5572,7 +5612,7 @@ PrefabInstance:
     - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 7a0ff290d62aa6146be8a6ef8734ad63, type: 2}
+      objectReference: {fileID: 11400000, guid: f0f48c707dcae66478c111bf51bc9263, type: 2}
     - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: isUnlocked
       value: 1
@@ -5982,7 +6022,7 @@ PrefabInstance:
     - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 7a0ff290d62aa6146be8a6ef8734ad63, type: 2}
+      objectReference: {fileID: 11400000, guid: f0f48c707dcae66478c111bf51bc9263, type: 2}
     - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: prequisiteSkillSlots.Array.size
       value: 1
@@ -7231,7 +7271,7 @@ PrefabInstance:
     - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: skillSO
       value: 
-      objectReference: {fileID: 11400000, guid: 7a0ff290d62aa6146be8a6ef8734ad63, type: 2}
+      objectReference: {fileID: 11400000, guid: f0f48c707dcae66478c111bf51bc9263, type: 2}
     - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: prequisiteSkillSlots.Array.size
       value: 2
@@ -16120,6 +16160,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: skillSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 7a0ff290d62aa6146be8a6ef8734ad63, type: 2}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 1614633166}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: prequisiteSkillSlots.Array.data[1]
+      value: 
+      objectReference: {fileID: 1614633166}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Name
       value: Skills Button (5)
