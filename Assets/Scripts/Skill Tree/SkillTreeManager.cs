@@ -15,12 +15,41 @@ public class SkillTreeManager : MonoBehaviour
         {
             slot.skillButton.onClick.AddListener(slot.tryUpgradeSkill);
         }
+        Debug.Log("Available points :" + availablePoints);
         updateSkillPoints(0);
+    }
+
+    private void OnEnable()
+    {
+        SkillSlot.OnSkillPointSpent += handleSkillPointSpent;
+        SkillSlot.OnSkillMaxed += handleSkillMaxed;
+    }
+
+    private void OnDisable()
+    {
+        SkillSlot.OnSkillPointSpent -= handleSkillPointSpent;
+        SkillSlot.OnSkillMaxed -= handleSkillMaxed;
     }
 
     public void updateSkillPoints(int skillPoint)
     {
         availablePoints += skillPoint;
-        pointsText.text = "Skill Points : " + skillPoint;
+        pointsText.text = "Skill Points : " + availablePoints;
+    }
+
+    private void handleSkillPointSpent(SkillSlot skillSlot)
+    {
+        if(availablePoints > 0)
+        {
+            updateSkillPoints(-1);   
+        }
+    }
+
+    private void handleSkillMaxed(SkillSlot skillSlot)
+    {
+        foreach(SkillSlot slot in skillSlots)
+        {
+            slot.unlock();
+        }
     }
 }

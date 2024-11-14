@@ -2691,7 +2691,7 @@ MonoBehaviour:
   - {fileID: 1032200146}
   - {fileID: 1416864935}
   pointsText: {fileID: 1551296137}
-  availablePoints: 0
+  availablePoints: 6
 --- !u!1001 &440695538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4879,6 +4879,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: skillSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 617dffddb4666db4381e235cd900bee4, type: 2}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Name
       value: Skills Button (6)
@@ -6704,6 +6708,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: skillSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 617dffddb4666db4381e235cd900bee4, type: 2}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Name
       value: Skills Button (9)
@@ -16122,6 +16130,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
+      propertyPath: skillSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 617dffddb4666db4381e235cd900bee4, type: 2}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Name
       value: Skills Button (3)
@@ -17566,7 +17578,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 617dffddb4666db4381e235cd900bee4, type: 2}
     - target: {fileID: 3508479128952584318, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: isUnlocked
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4363698162606269372, guid: 9c2a1c5418ef59342b27352e79f85096, type: 3}
       propertyPath: m_Name
