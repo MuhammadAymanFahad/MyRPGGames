@@ -20,12 +20,14 @@ public class ToggleSkillTree : MonoBehaviour
             if (skillTreeOpen)
             {
                 statsCanvas.alpha = 0;
+                statsCanvas.interactable = false;
                 statsCanvas.blocksRaycasts = false;
                 skillTreeOpen = false;
             }
             else
             {
                 statsCanvas.alpha = 1;
+                statsCanvas.interactable = true;
                 statsCanvas.blocksRaycasts = true;
                 skillTreeOpen = true;
             }
