@@ -15,7 +15,6 @@ public class SkillTreeManager : MonoBehaviour
         {
             slot.skillButton.onClick.AddListener(() => checkAvailablePoints(slot));
         }
-        Debug.Log("Available points :" + availablePoints);
         updateSkillPoints(0);
     }
 
