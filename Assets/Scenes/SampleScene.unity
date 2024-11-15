@@ -553,7 +553,7 @@ GameObject:
   - component: {fileID: 212644067}
   - component: {fileID: 212644069}
   - component: {fileID: 212644068}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Collision-Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -674,7 +674,7 @@ GameObject:
   - component: {fileID: 235915689}
   - component: {fileID: 235915688}
   - component: {fileID: 235915690}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Collision-Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1195,7 +1195,7 @@ GameObject:
   - component: {fileID: 273478375}
   - component: {fileID: 273478378}
   - component: {fileID: 273478377}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Non-Collision-Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1777,7 +1777,7 @@ GameObject:
   - component: {fileID: 397998532}
   - component: {fileID: 397998534}
   - component: {fileID: 397998533}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground-Decoration
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2889,7 +2889,7 @@ GameObject:
   - component: {fileID: 448537823}
   - component: {fileID: 448537822}
   - component: {fileID: 448537821}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: High-Ground-Boundary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3499,7 +3499,7 @@ GameObject:
   - component: {fileID: 588694918}
   - component: {fileID: 588694920}
   - component: {fileID: 588694919}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4115,7 +4115,7 @@ GameObject:
   - component: {fileID: 655464999}
   - component: {fileID: 655465001}
   - component: {fileID: 655465000}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Non-Collision-High
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5170,7 +5170,7 @@ GameObject:
   - component: {fileID: 793903513}
   - component: {fileID: 793903515}
   - component: {fileID: 793903514}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Non-Collision-High
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6150,7 +6150,7 @@ GameObject:
   - component: {fileID: 942488435}
   - component: {fileID: 942488437}
   - component: {fileID: 942488436}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Non-Collision-Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8134,7 +8134,7 @@ GameObject:
   - component: {fileID: 1539035528}
   - component: {fileID: 1539035530}
   - component: {fileID: 1539035529}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15486,7 +15486,7 @@ GameObject:
   - component: {fileID: 1747519652}
   - component: {fileID: 1747519651}
   - component: {fileID: 1747519653}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Collision-High
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16682,7 +16682,7 @@ GameObject:
   - component: {fileID: 1940717996}
   - component: {fileID: 1940717998}
   - component: {fileID: 1940717997}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Collision-High
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17470,7 +17470,7 @@ GameObject:
   - component: {fileID: 2102407336}
   - component: {fileID: 2102407337}
   - component: {fileID: 2102407338}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Exits
   m_TagString: Untagged
   m_Icon: {fileID: 0}

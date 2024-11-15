@@ -306,5 +306,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d20098e45b233244a6845a0c0593d6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyRigidBody: {fileID: 0}
-  enemyMovement: {fileID: 0}
+  enemyRigidBody: {fileID: 8621404592752598718}
+  enemyMovement: {fileID: -8747156514776220129}
