@@ -24,7 +24,7 @@ public class SkillManager : MonoBehaviour
                 break;
 
             default :
-                Debug.LogWarning("The" + skillName +"skills didn't have case option yet");
+                Debug.LogWarning("The " + skillName +"skills didn't have case option yet");
                 break;
         }
     }
