@@ -14,6 +14,10 @@ public class PlayerBow : MonoBehaviour
 
     public void shoot()
     {
-        Instantiate(arrowPrefabs, launchPoint.position, Quaternion.identity);
+        if (Input.GetButtonDown("ShootArrow"))
+        {
+            Debug.Log("shoot button pressed");
+            Instantiate(arrowPrefabs, launchPoint.position, Quaternion.identity);
+        }
     }
 }

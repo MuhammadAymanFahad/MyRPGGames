@@ -16,7 +16,6 @@ public class PlayerMovement : MonoBehaviour
             playerCombat.attack();
         }
     }
-    // Update is called once per frame
     void FixedUpdate()
     {
         if (!isKnockedBack)
