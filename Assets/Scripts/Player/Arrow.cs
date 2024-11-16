@@ -8,10 +8,17 @@ public class Arrow : MonoBehaviour
     [SerializeField] private float lifeSpan;
     [SerializeField] private float speed;
     public Vector2 direction;
+
     void Start()
     {
         arrowRigidBody.velocity = direction * speed;
         Destroy(gameObject, lifeSpan);
+    }
+
+    void rotateArrow()
+    {
+        float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
     }
 
     

@@ -193,5 +193,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrowRigidBody: {fileID: 2060443761723802081}
   lifeSpan: 3
-  speed: 4
+  speed: 7
   direction: {x: 1, y: 0}
