@@ -18,8 +18,8 @@ public class PlayerBow : MonoBehaviour
     {
         if (Input.GetButtonDown("ShootArrow"))
         {
-            Debug.Log("shoot button pressed");
-            Instantiate(arrowPrefabs, launchPoint.position, Quaternion.identity);
+            Arrow arrow = Instantiate(arrowPrefabs, launchPoint.position, Quaternion.identity).GetComponent<Arrow>();
+            arrow.direction = aimDirection;
         }
     }
 
@@ -27,5 +27,10 @@ public class PlayerBow : MonoBehaviour
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
+
+        if (horizontal != 0 || vertical != 0)
+        {
+            aimDirection = new Vector2(horizontal, vertical).normalized;
+        }
     }
 }
