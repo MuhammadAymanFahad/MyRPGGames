@@ -6,9 +6,11 @@ public class PlayerBow : MonoBehaviour
 {
     [SerializeField] private Transform launchPoint;
     [SerializeField] private GameObject arrowPrefabs;
+    private Vector2 aimDirection = Vector2.right;
 
     private void Update()
     {
+        handleAiming();
         shoot();
     }
 
@@ -19,5 +21,11 @@ public class PlayerBow : MonoBehaviour
             Debug.Log("shoot button pressed");
             Instantiate(arrowPrefabs, launchPoint.position, Quaternion.identity);
         }
+    }
+
+    private void handleAiming()
+    {
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
     }
 }
