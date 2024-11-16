@@ -11,7 +11,7 @@ public class Arrow : MonoBehaviour
     void Start()
     {
         arrowRigidBody.velocity = direction * speed;
-        Destroy(this.gameObject, lifeSpan);
+        Destroy(gameObject, lifeSpan);
     }
 
     
