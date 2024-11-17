@@ -6,8 +6,12 @@ public class Arrow : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D arrowRigidBody;
     [SerializeField] private LayerMask enemyLayer;
+    [SerializeField] private float knockbackForce;
+    [SerializeField] private float knockbackTime;
+    [SerializeField] private float stunTime;
     [SerializeField] private float lifeSpan;
     [SerializeField] private float speed;
+
     [SerializeField] private int damage;
     public Vector2 direction = Vector2.right;
 
@@ -29,6 +33,7 @@ public class Arrow : MonoBehaviour
         if((enemyLayer.value & (1 << collision.gameObject.layer)) > 0)
         {
             collision.gameObject.GetComponent<EnemyHealth>().changeHealth(-damage);
+            collision.gameObject.GetComponent<EnemyKnockback>().Knockback(transform, knockbackForce, knockbackTime, stunTime);
         }
     }
 }
