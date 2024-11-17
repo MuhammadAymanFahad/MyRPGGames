@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class PlayerBow : MonoBehaviour
 {
+    private float shootTimer;
+    [SerializeField] private float shootCooldown = 1f;
     [SerializeField] private Transform launchPoint;
     [SerializeField] private GameObject arrowPrefabs;
     private Vector2 aimDirection = Vector2.right;
 
     private void Update()
     {
+        shootTimer -= Time.deltaTime;
         handleAiming();
-        shoot();
+        if(shootTimer <= 0)
+        {
+            shoot();
+        }
     }
 
     public void shoot()
@@ -20,6 +26,7 @@ public class PlayerBow : MonoBehaviour
         {
             Arrow arrow = Instantiate(arrowPrefabs, launchPoint.position, Quaternion.identity).GetComponent<Arrow>();
             arrow.direction = aimDirection;
+            shootTimer = shootCooldown;
         }
     }
 
