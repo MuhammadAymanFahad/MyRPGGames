@@ -194,4 +194,4 @@ MonoBehaviour:
   arrowRigidBody: {fileID: 2060443761723802081}
   lifeSpan: 3
   speed: 7
-  direction: {x: 1, y: 0}
+  direction: {x: 2, y: 0}
