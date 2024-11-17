@@ -7,11 +7,12 @@ public class Arrow : MonoBehaviour
     [SerializeField] private Rigidbody2D arrowRigidBody;
     [SerializeField] private float lifeSpan;
     [SerializeField] private float speed;
-    public Vector2 direction;
+    public Vector2 direction = Vector2.right;
 
     void Start()
     {
         arrowRigidBody.velocity = direction * speed;
+        rotateArrow();
         Destroy(gameObject, lifeSpan);
     }
 
