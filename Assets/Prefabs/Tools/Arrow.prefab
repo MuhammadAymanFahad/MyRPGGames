@@ -192,6 +192,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrowRigidBody: {fileID: 2060443761723802081}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 512
   lifeSpan: 3
   speed: 7
+  damage: 1
   direction: {x: 2, y: 0}
