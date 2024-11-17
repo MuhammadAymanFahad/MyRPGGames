@@ -7,7 +7,7 @@ public class Arrow : MonoBehaviour
     [SerializeField] private Rigidbody2D arrowRigidBody;
     [SerializeField] private float lifeSpan;
     [SerializeField] private float speed;
-    public Vector2 direction = Vector2.right;
+    public Vector2 direction;
 
     void Start()
     {
